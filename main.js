@@ -1,17 +1,5 @@
 // tady je místo pro náš program
 
-//let nadpis = document.querySelector("h1");
-//nadpis.classList.add("zluty");
-
-//nadpis.classList.remove("zluty");
-
-//function secti(a, b) {
-//nadpis.innerHTML = a + b;
-//}
-
-//let nadpis;
-//nadpis = document.querySelector("p");
-
 let nadpis = document.querySelector("#js-paragraph");
 
 function ztucni(udalost) {
@@ -24,6 +12,8 @@ function zmenBarvu() {
     nadpis.classList.toggle("cerveny");
 }
 function zvetsi() {
+    //let font = document.getElementById('b').style.fontSize;
+    //font++;
     nadpis.style.fontSize = "17px";
 }
 
