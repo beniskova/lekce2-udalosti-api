@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,19 +8,44 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Source+Sans+Pro:400,400i,700,700i&amp;subset=latin-ext" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 	<h1>Změna tříd, události</h1>
 
-	<div class="ctverecek zluty"></div>
+	<p id="js-paragraph" style="font-size: 16px;" onmouseover="ztucni (event)" onmouseout="this.style.fontWeight = 'normal';">
+		V elipse spí lev.
+	</p>
 
-	<div class="ctverecek zeleny"></div>
+	<button onclick="zmenBarvu(event)">
+		červený po kliknutí
+	</button>
+
+	<button onclick="zvetsi(16,1)">
+		větší po kliknutí
+	</button>
+
+
+	<div class="ctverecek zluty" onmouseout="secti(4,5)"></div>
+
+	<div class="ctverecek zeleny" onkeydown="console.log(event)"></div>
+
+	<input type="text" onkeydown="console.log(event)">
 
 	<img class="obrazek" src="obrazky/kocka.jpg">
 
 	<button class="tlacitko">Čudlajs</button>
 
-	<audio src="audio/dingdingdang.mp3" preload="auto"></audio>
+	<audio id="js-audio" src="audio/dingdingdang.mp3" preload="auto"></audio>
 
+	<button onclick="prehraj ('#js-audio')">Přehraj</button>
+	<button onclick="zastav ('#js-audio')">Pauzni</button>
+	<button onclick="ztis ('#js-audio')">Ztišit</button>
+	<button onclick="zvuk ('#js-audio')">Hlasitost tak akorát</button>
+	<button onclick="maximum ('#js-audio')">Hlasitost na maximum</button>
+	<button onclick="zacatek ('#js-audio')">Návrat na začátek</button>
+
+	<script src="main.js"></script>
 </body>
+
 </html>

@@ -121,3 +121,15 @@ li {
 	color: black;
 	border-color: blue;
 }
+.cerveny {
+	color: red;
+}
+.cerny{
+	color: black;
+}
+.large{
+	font-size: "+1px";
+}
+.tucny{
+	font-weight: bold;
+}
